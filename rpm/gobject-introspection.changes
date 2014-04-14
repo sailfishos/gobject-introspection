@@ -4,11 +4,10 @@
 
 * Thu May 05 2011 Anas Nashif <anas.nashif@intel.com> - 0.10.8
 - Update to 0.10.8 (BMC #13656)
-  Split python module into a python package
+- Split python module into a python package
 
 * Thu Feb 17 2011 Damien Lespiau <damien.lespiau@intel.com> 0.10.
-- Reimport gojbect-introspection in MeeGo as we now really need it
-  (BMC #13656)
+- Reimport gojbect-introspection in MeeGo as we now really need it (BMC #13656)
 
 * Thu Aug 12 2010 Zhang Qiang <qiang.z.zhang@intel.com> - 0.9.3
 - Update to 0.9.3
@@ -32,5 +31,5 @@
 - Upgrade to 0.6.7
 - Fix the install file list
 
-* Thu Sep 24 2009 Zhang Qiang<qiang.z.zhagn@intel.com> - 0.6.5-1
+* Thu Sep 24 2009 Zhang Qiang <qiang.z.zhagn@intel.com> - 0.6.5-1
 - Initial import to Moblin
