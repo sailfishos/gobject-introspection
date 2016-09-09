@@ -1,6 +1,6 @@
 Name:       gobject-introspection
 Summary:    Introspection system for GObject-based libraries
-Version:    1.38.0
+Version:    1.48.0
 Release:    1
 Group:      Development/Libraries
 License:    GPLv2+, LGPLv2+, MIT
@@ -12,7 +12,7 @@ BuildRequires:  pkgconfig(libffi)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(freetype2)
-BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(glib-2.0) >= 1.48.0
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  python-devel >= 2.5
 BuildRequires:  gettext
@@ -20,6 +20,7 @@ BuildRequires:  intltool
 BuildRequires:  flex
 BuildRequires:  bison
 BuildRequires:  chrpath
+BuildRequires:  libtool
 
 %description
 GObject Introspection can scan C header and source files in order to
