@@ -1,6 +1,6 @@
 Name:       gobject-introspection
 Summary:    Introspection system for GObject-based libraries
-Version:    1.56.1
+Version:    1.63.2
 Release:    1
 License:    GPLv2+, LGPLv2+, MIT
 URL:        http://live.gnome.org/GObjectIntrospection
