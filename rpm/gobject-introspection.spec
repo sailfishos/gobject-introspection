@@ -5,6 +5,7 @@ Release:    1
 License:    GPLv2+, LGPLv2+, MIT
 URL:        http://live.gnome.org/GObjectIntrospection
 Source0:    %{name}-%{version}.tar.gz
+Patch0:     0001-backport-build-Avoid-the-doctemplates-hack.patch
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(libffi)
@@ -42,7 +43,7 @@ Requires:   python-giscanner
 Libraries and headers for gobject-introspection.
 
 %prep
-%autosetup -n %{name}-%{version}/%{name}
+%autosetup -p1 -n %{name}-%{version}/%{name}
 
 %build
 %meson -Dcairo=disabled -Ddoctool=disabled -Dgtk_doc=false -Dpython=%{__python3}
