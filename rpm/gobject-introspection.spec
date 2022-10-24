@@ -1,11 +1,10 @@
 Name:       gobject-introspection
 Summary:    Introspection system for GObject-based libraries
-Version:    1.63.2
+Version:    1.72.1
 Release:    1
 License:    GPLv2+, LGPLv2+, MIT
-URL:        http://live.gnome.org/GObjectIntrospection
+URL:        https://github.com/sailfishos/gobject-introspection
 Source0:    %{name}-%{version}.tar.gz
-Patch0:     0001-backport-build-Avoid-the-doctemplates-hack.patch
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(libffi)
