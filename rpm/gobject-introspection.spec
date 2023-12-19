@@ -14,7 +14,6 @@ BuildRequires:  pkgconfig(freetype2)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.58.0
 BuildRequires:  python3-devel
 BuildRequires:  gettext
-BuildRequires:  intltool
 BuildRequires:  flex
 BuildRequires:  bison
 BuildRequires:  meson
