@@ -1,6 +1,6 @@
 Name:       gobject-introspection
 Summary:    Introspection system for GObject-based libraries
-Version:    1.72.1
+Version:    1.82.0
 Release:    1
 License:    GPLv2+, LGPLv2+, MIT
 URL:        https://github.com/sailfishos/gobject-introspection
@@ -11,7 +11,7 @@ BuildRequires:  pkgconfig(libffi)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(freetype2)
-BuildRequires:  pkgconfig(glib-2.0) >= 2.58.0
+BuildRequires:  pkgconfig(glib-2.0) >= 2.82.0
 BuildRequires:  python3-devel
 BuildRequires:  gettext
 BuildRequires:  flex
@@ -48,7 +48,6 @@ Libraries and headers for gobject-introspection.
 %meson_build
 
 %install
-rm -rf %{buildroot}
 %meson_install
 
 %post -p /sbin/ldconfig
@@ -56,18 +55,15 @@ rm -rf %{buildroot}
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
 %license COPYING
 %{_libdir}/lib*.so.*
 %dir %{_libdir}/girepository-1.0
 %{_libdir}/girepository-1.0/*.typelib
 
 %files -n python-giscanner
-%defattr(-,root,root,-)
 %{_libdir}/gobject-introspection/giscanner
 
 %files devel
-%defattr(-,root,root,-)
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
