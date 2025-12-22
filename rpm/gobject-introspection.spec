@@ -1,6 +1,6 @@
 Name:       gobject-introspection
 Summary:    Introspection system for GObject-based libraries
-Version:    1.82.0
+Version:    1.86.0
 Release:    1
 License:    GPLv2+, LGPLv2+, MIT
 URL:        https://github.com/sailfishos/gobject-introspection
